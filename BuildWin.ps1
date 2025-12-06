@@ -1,4 +1,4 @@
-Clear.ps1
+./Clear.ps1
 cp main.py launcher_win.py
 python -m PyInstaller --onefile --windowed --noconsole --icon=icono.ico launcher_win.py
 python -m PyInstaller --onefile --windowed --noconsole --icon=icono.ico installer_updater.py
