@@ -19,8 +19,8 @@ BUILD_URL_LINUX = "https://github.com/acierto-incomodo/KartsMultiplayer/releases
 VERSION_URL = "https://github.com/acierto-incomodo/KartsMultiplayer/releases/latest/download/Version.txt"
 RELEASE_NOTES_URL = "https://github.com/acierto-incomodo/KartsMultiplayer/releases/latest/download/ReleaseNotes.txt"
 
-EXE_NAME_WIN   = "Build/The Shooter.exe"
-EXE_NAME_LINUX = "The Shooter Linux.x86_64"
+EXE_NAME_WIN   = "Build/Karts Multiplayer.exe"
+EXE_NAME_LINUX = "Karts Multiplayer Linux.x86_64"
 
 DOWNLOAD_DIR = Path.cwd() / "downloads"
 GAME_DIR     = Path.cwd() / "game"
@@ -83,7 +83,7 @@ class LauncherWindow(QtWidgets.QWidget):
 
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("The Shooter Launcher")
+        self.setWindowTitle("Karts Multiplayer Launcher")
         self.setMinimumSize(520, 420)
         self.setMaximumSize(520, 420)
         self.setWindowIcon(QtGui.QIcon.fromTheme("applications-games"))
@@ -97,7 +97,7 @@ class LauncherWindow(QtWidgets.QWidget):
     def setup_ui(self):
         layout = QtWidgets.QVBoxLayout(self)
 
-        title = QtWidgets.QLabel("The Shooter Launcher")
+        title = QtWidgets.QLabel("Karts Multiplayer Launcher")
         title.setAlignment(QtCore.Qt.AlignCenter)
         title.setStyleSheet("font-size:22px; font-weight:bold;")
         layout.addWidget(title)
