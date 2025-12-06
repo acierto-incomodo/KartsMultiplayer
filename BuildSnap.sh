@@ -37,9 +37,9 @@ parts:
       # Copiar launcher.desktop desde gui
       install -Dm644 gui/theshooterlauncher.desktop $SNAPCRAFT_PART_INSTALL/meta/gui/theshooterlauncher.desktop
       # Copiar icono desde local
-      install -Dm644 local/logo.png $SNAPCRAFT_PART_INSTALL/meta/gui/icon.png
+      install -Dm644 local/icono.png $SNAPCRAFT_PART_INSTALL/meta/gui/icon.png
 
-icon: snap/local/logo.png
+icon: snap/local/icono.png
 EOF
 
 # Crear el archivo launcher.desktop
@@ -47,18 +47,18 @@ cat << 'EOF' > snap/gui/theshooterlauncher.desktop
 [Desktop Entry]
 Name=The Shooter Launcher
 Exec=theshooterlauncher
-Icon=${SNAP}/logo.png
+Icon=${SNAP}/icono.png
 Type=Application
 Categories=Game;
 Terminal=false
 EOF
 
-# Copiar logo.png desde raíz
-if [ -f logo.png ]; then
-    cp logo.png snap/local
-    echo "logo.png copiado correctamente."
+# Copiar icono.png desde raíz
+if [ -f icono.png ]; then
+    cp icono.png snap/local
+    echo "icono.png copiado correctamente."
 else
-    echo "ADVERTENCIA: No se encontró logo.png en root."
+    echo "ADVERTENCIA: No se encontró icono.png en root."
 fi
 
 # Copiar main desde dist/
