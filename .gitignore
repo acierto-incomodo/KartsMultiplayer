@@ -9,12 +9,9 @@
 /downloads
 /snap
 /WinDownloads
-/output
-version_win_launcher.txt
 launcher_win.py
 credentials
 main
 dist/main
-/dist
-/dist
 /kartsmultiplayerlauncher_deb
+dist/installer_updater.exe

@@ -1,7 +1,7 @@
 Cambios
 
-Launcher (v1.0.0):
-- NaN
+Launcher (v1.0.3):
+- Eliminacion automatica de archivos innecesarios
 
-Juego (v1.0.2):
+Juego (v1.0.3):
 - Botón para copiar el código de sala
