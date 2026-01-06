@@ -6,7 +6,7 @@ set -e
 
 # Configuración
 PACKAGE_NAME="kartsmultiplayerlauncher"
-VERSION="1.0.0"
+VERSION="1.0.1"
 ARCH="amd64"
 EXECUTABLE_NAME="main"        # Tu binario generado por PyInstaller
 ICON_NAME="icono.png"           # Icono del launcher

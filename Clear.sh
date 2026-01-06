@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Array de carpetas a eliminar
-folders=("build" "dist" "downloads" "game" "kartsmultiplayerlauncher" "snap" "WinDownloads" "output")
+folders=("build" "dist" "downloads" "game" "kartsmultiplayerlauncher" "snap" "WinDownloads")
 
 # Array de archivos a eliminar
 files=("main.spec" "kartsmultiplayerlauncher.deb" "launcher_win.py" "launcher_win.spec" "installer_updater.spec" "version_win_launcher.txt")

@@ -12,7 +12,7 @@ from PySide6 import QtCore, QtWidgets, QtGui
 
 # ---------------- CONFIG ------------------
 
-LAUNCHER_VERSION = "1.0.0"
+LAUNCHER_VERSION = "1.0.1"
 
 BUILD_URL_WIN = "https://github.com/acierto-incomodo/KartsMultiplayer/releases/latest/download/Build.zip"
 BUILD_URL_LINUX = "https://github.com/acierto-incomodo/KartsMultiplayer/releases/latest/download/BuildLinux.zip"
@@ -322,6 +322,14 @@ class LauncherWindow(QtWidgets.QWidget):
         self.progress.setVisible(False)
         self.set_status("Instalación completada." if not self.game_installed() else "Actualización completada.")
         
+        # Limpiar carpeta de descargas
+        try:
+            if DOWNLOAD_DIR.exists():
+                shutil.rmtree(DOWNLOAD_DIR)
+            DOWNLOAD_DIR.mkdir(exist_ok=True)
+        except Exception:
+            pass
+
         # Habilitar botones nuevamente
         self.btn_check.setEnabled(True)
         self.btn_update.setEnabled(True)
