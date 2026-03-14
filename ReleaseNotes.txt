@@ -3,5 +3,5 @@ Cambios
 Launcher (v1.0.3):
 - Eliminacion automatica de archivos innecesarios
 
-Juego (v1.0.5):
+Juego (v1.0.6):
 - Botón para copiar el código de sala
